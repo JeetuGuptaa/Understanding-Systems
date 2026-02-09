@@ -8,6 +8,7 @@ const eventReqs = new Map();
 
 const startEmitter = async (eventId) => {
   let updateAfter = Math.floor(Math.random() * 32);
+
   console.log(`${eventId} will be updated after ${updateAfter} sec`)
   setTimeout(() => {
     let score = Math.floor(Math.random() * 10);
@@ -65,7 +66,8 @@ app.get('/status', async (req, res) => {
      }
 
      if (db[eventId]) {
-      if (db[eventId].updatedAt > last_updated) {
+      if (db[eventId].updatedAt > parseInt(last_updated)) {
+
         return res.status(200).json({
           success: true, 
           message: 'Data fetched successfully',

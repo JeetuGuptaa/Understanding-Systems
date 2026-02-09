@@ -35,14 +35,35 @@ A full-stack demonstration of the short polling pattern, showing both implementa
 
 ---
 
+### 2. [Long Polling](Long%20Polling/)
+
+**Status:** ✅ Complete
+
+A full-stack demonstration of the long polling pattern, showing near real-time updates with much better efficiency than short polling.
+
+**What you'll learn:**
+- How long polling works (connection held until data changes)
+- 90% reduction in requests compared to short polling
+- Request queueing and timeout management
+- Handling client disconnects gracefully
+- When to use long polling vs WebSockets/SSE
+
+**Tech Stack:** Node.js + Express, React 19, Vite
+
+**Key Features:**
+- 5 simultaneous events with real-time score tracking
+- Visual connection status indicators (waiting, updated, timeout)
+- Live statistics dashboard (active connections, total requests)
+- Network tab shows requests staying "pending" until updates
+- Comparison metrics vs short polling
+
+[📖 Read more →](Long%20Polling/README.md)
+
+---
+
 ## 🗺️ Roadmap
 
 Coming soon:
-
-### Long Polling
-- Request holds until data is available
-- Comparison with short polling
-- Resource usage analysis
 
 ### WebSockets
 - Bidirectional real-time communication
