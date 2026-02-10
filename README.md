@@ -61,6 +61,34 @@ A full-stack demonstration of the long polling pattern, showing near real-time u
 
 ---
 
+### 3. [Server-Sent Events](Server%20Sent%20Events/)
+
+**Status:** ✅ Complete
+
+A full-stack demonstration of Server-Sent Events (SSE) for efficient real-time server-to-client communication using a single persistent HTTP connection.
+
+**What you'll learn:**
+- How SSE works (server pushes updates to client)
+- EventSource API in React
+- Broadcasting to multiple clients
+- 90%+ fewer requests than polling
+- When to use SSE vs WebSockets vs polling
+- Built-in auto-reconnection
+
+**Tech Stack:** Node.js + Express, React 19, Vite
+
+**Key Features:**
+- Real-time dashboard with 3 widgets (stock, metrics, notifications)
+- Multiple event streams on single connection
+- Live event log with color-coded types
+- Manual notification trigger
+- Connection management and statistics
+- Heartbeat to keep connections alive
+
+[📖 Read more →](Server%20Sent%20Events/README.md)
+
+---
+
 ## 🗺️ Roadmap
 
 Coming soon:
@@ -69,11 +97,6 @@ Coming soon:
 - Bidirectional real-time communication
 - Chat application example
 - Connection lifecycle management
-
-### Server-Sent Events (SSE)
-- One-way server-to-client streaming
-- Live notifications demo
-- Comparison with WebSockets
 
 ### Message Queues
 - Pub/Sub patterns
