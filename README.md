@@ -89,14 +89,37 @@ A full-stack demonstration of Server-Sent Events (SSE) for efficient real-time s
 
 ---
 
+### 4. [WebSockets](Websockets/)
+
+**Status:** ✅ Complete
+
+A full-stack demonstration of WebSocket protocol for full-duplex, bidirectional real-time communication between client and server.
+
+**What you'll learn:**
+- How WebSockets work (persistent bidirectional connection)
+- Difference between WebSockets and HTTP/SSE
+- Broadcasting updates to multiple clients
+- Connection lifecycle management
+- When to use WebSockets vs SSE vs polling
+- Message handling and protocol design
+
+**Tech Stack:** Node.js + Express + ws, React 19, Vite
+
+**Key Features:**
+- Real-time event tracking with 5 simultaneous events
+- Bidirectional communication (client can send messages)
+- Live connection status and statistics
+- Auto-reconnection on disconnect
+- PING/PONG heartbeat mechanism
+- HTTP endpoints alongside WebSocket
+
+[📖 Read more →](Websockets/README.md)
+
+---
+
 ## 🗺️ Roadmap
 
 Coming soon:
-
-### WebSockets
-- Bidirectional real-time communication
-- Chat application example
-- Connection lifecycle management
 
 ### Message Queues
 - Pub/Sub patterns
@@ -155,7 +178,7 @@ Recommended order for beginners:
 1. **Short Polling** ← Start here (simple, demonstrates inefficiency)
 2. **Long Polling** (improves on short polling)
 3. **Server-Sent Events** (one-way streaming)
-4. **WebSockets** (full-duplex communication)
+4. **WebSockets** ✅ (full-duplex communication)
 5. **Message Queues** (decoupled architecture)
 6. **Caching** (performance optimization)
 7. **Load Balancing** (scaling)
