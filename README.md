@@ -117,14 +117,42 @@ A full-stack demonstration of WebSocket protocol for full-duplex, bidirectional 
 
 ---
 
+### 5. [Pub/Sub (Publish-Subscribe)](pub-sub/)
+
+**Status:** ✅ Complete
+
+A hands-on demonstration of the Publish-Subscribe messaging pattern using Redis, showing how publishers and subscribers communicate through a message broker with complete decoupling.
+
+**What you'll learn:**
+- How Pub/Sub messaging works (publisher → broker → subscribers)
+- Broadcast pattern (one message reaches all subscribers)
+- Complete decoupling between components
+- Redis as a message broker
+- Difference between Pub/Sub and message queues
+- Ephemeral messaging (no persistence)
+
+**Tech Stack:** Node.js + Express, Redis, redis (npm client)
+
+**Key Features:**
+- Publisher sends random messages every 5 seconds
+- Two independent subscribers receive all messages
+- Real-time message broadcasting
+- Subscriber count tracking
+- Fire-and-forget delivery
+- Connection management and error handling
+
+[📖 Read more →](pub-sub/README.md)
+
+---
+
 ## 🗺️ Roadmap
 
 Coming soon:
 
 ### Message Queues
-- Pub/Sub patterns
 - Queue-based communication
 - Reliability and message ordering
+- Work distribution patterns
 
 ### Caching Strategies
 - In-memory caching
@@ -178,11 +206,12 @@ Recommended order for beginners:
 1. **Short Polling** ← Start here (simple, demonstrates inefficiency)
 2. **Long Polling** (improves on short polling)
 3. **Server-Sent Events** (one-way streaming)
-4. **WebSockets** ✅ (full-duplex communication)
-5. **Message Queues** (decoupled architecture)
-6. **Caching** (performance optimization)
-7. **Load Balancing** (scaling)
-8. **Rate Limiting** (protection)
+4. **WebSockets** (full-duplex communication)
+5. **Pub/Sub** ✅ (message broker pattern, decoupled architecture)
+6. **Message Queues** (guaranteed delivery, work distribution)
+7. **Caching** (performance optimization)
+8. **Load Balancing** (scaling)
+9. **Rate Limiting** (protection)
 
 ## 🤝 Contributing
 
