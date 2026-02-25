@@ -145,14 +145,40 @@ A hands-on demonstration of the Publish-Subscribe messaging pattern using Redis,
 
 ---
 
+### 6. [Message Queue](Message%20Queue/)
+
+**Status:** ✅ Complete
+
+A comprehensive demonstration of message queues using BullMQ and Redis, showing how to build reliable, scalable job processing systems with producers and workers.
+
+**What you'll learn:**
+- How message queues work (producer → queue → worker)
+- Difference between Pub/Sub and message queues
+- Job processing with BullMQ
+- Retry logic and error handling
+- Job states and progress tracking
+- Worker concurrency and scaling
+- Guaranteed delivery vs fire-and-forget
+
+**Tech Stack:** Node.js + Express, BullMQ, Redis
+
+**Key Features:**
+- Producer API for adding jobs to queue
+- Separate worker process for job processing
+- Multiple task types (email, image processing, reports)
+- Automatic retry with exponential backoff
+- Real-time progress tracking (0-100%)
+- Job status monitoring and queue statistics
+- Horizontal scaling (multiple workers)
+- Graceful shutdown handling
+
+[📖 Read more →](Message%20Queue/README.md)
+
+---
+
 ## 🗺️ Roadmap
 
 Coming soon:
-
-### Message Queues
-- Queue-based communication
-- Reliability and message ordering
-- Work distribution patterns
 
 ### Caching Strategies
 - In-memory caching
@@ -207,8 +233,8 @@ Recommended order for beginners:
 2. **Long Polling** (improves on short polling)
 3. **Server-Sent Events** (one-way streaming)
 4. **WebSockets** (full-duplex communication)
-5. **Pub/Sub** ✅ (message broker pattern, decoupled architecture)
-6. **Message Queues** (guaranteed delivery, work distribution)
+5. **Pub/Sub** (message broker pattern, fire-and-forget)
+6. **Message Queues** ✅ (guaranteed delivery, work distribution, job processing)
 7. **Caching** (performance optimization)
 8. **Load Balancing** (scaling)
 9. **Rate Limiting** (protection)
