@@ -176,6 +176,41 @@ A comprehensive demonstration of message queues using BullMQ and Redis, showing 
 
 ---
 
+### 7. [Rate Limiting](Rate%20Limiting/)
+
+**Status:** ✅ Complete
+
+A comprehensive demonstration of rate limiting algorithms to protect APIs from abuse and overload, with side-by-side comparison of four different approaches.
+
+**What you'll learn:**
+- How rate limiting works (protect APIs from abuse)
+- Four different algorithms compared (Token Bucket, Sliding Window, Fixed Window, Distributed)
+- Trade-offs between accuracy, memory, and complexity
+- Distributed rate limiting with Redis
+- Handling bursts and edge cases
+- Production-ready patterns
+
+**Tech Stack:** Node.js + Express, Redis, React 19, Vite
+
+**Key Features:**
+- Four algorithms with visual comparison
+- Interactive testing with auto-test mode
+- Real-time quota tracking and progress bars
+- Request history with success/failure tracking
+- Distributed rate limiting across multiple servers
+- HTTP standard headers (X-RateLimit-*, Retry-After)
+- Side-by-side algorithm comparison
+
+**Algorithms:**
+- **Token Bucket** - 5 tokens, refills at 1/sec (handles bursts)
+- **Sliding Window** - 8 requests per 30s (most accurate)
+- **Fixed Window** - 6 requests per 20s (simplest)
+- **Distributed Redis** - 10 requests per 60s (scales horizontally)
+
+[📖 Read more →](Rate%20Limiting/README.md)
+
+---
+
 ## 🗺️ Roadmap
 
 Coming soon:
@@ -189,11 +224,6 @@ Coming soon:
 - Round-robin, least connections
 - Health checks
 - Session persistence
-
-### Rate Limiting
-- Token bucket algorithm
-- Sliding window
-- Distributed rate limiting
 
 ## 🚀 Getting Started
 
@@ -234,10 +264,10 @@ Recommended order for beginners:
 3. **Server-Sent Events** (one-way streaming)
 4. **WebSockets** (full-duplex communication)
 5. **Pub/Sub** (message broker pattern, fire-and-forget)
-6. **Message Queues** ✅ (guaranteed delivery, work distribution, job processing)
-7. **Caching** (performance optimization)
-8. **Load Balancing** (scaling)
-9. **Rate Limiting** (protection)
+6. **Message Queues** (guaranteed delivery, work distribution, job processing)
+7. **Rate Limiting** ✅ (API protection, algorithm comparison)
+8. **Caching** (performance optimization)
+9. **Load Balancing** (scaling)
 
 ## 🤝 Contributing
 

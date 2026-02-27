@@ -1,0 +1,19 @@
+{
+  "name": "rate-limiting-backend",
+  "version": "1.0.0",
+  "description": "Backend demonstrating various rate limiting strategies",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["rate-limiting", "token-bucket", "sliding-window"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "redis": "^4.6.7"
+  }
+}
